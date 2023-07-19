@@ -14,13 +14,39 @@
             margin: 0;
             box-sizing: border-box;
             display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(172, 30, 30);
+        }
+
+        .heading {
+            color: wheat;
+        }
+
+        .heading ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #heading-small-screen {
+            color: wheat;
+            visibility: hidden;
+            position: fixed;
+            font-family: cursive;
+        }
+
+        #canvas-container {
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: rgb(172, 30, 30);
+            color: wheat;
         }
 
         #canvas {
             border: 3px solid red;
+            background-color: white;
         }
 
         @media (max-width: 768px) {
@@ -32,6 +58,16 @@
                 width: 600px;
                 height: 340px;
             }
+
+            .heading {
+                visibility: hidden;
+            }
+
+            #heading-small-screen{
+                visibility: visible;
+                position:relative;
+            }
+
         }
     </style>
 
@@ -39,10 +75,71 @@
 
 <body>
 
-    <canvas height="680px" width="1200px" id="canvas"></canvas>
-    <br />
-    <input type="range" min="0" max="65" id="rangeInput" value="65">
-    <span id="rangeValue">65</span>
+    <div class="heading">
+        <ul>
+            <li>
+                <h2>R</h2>
+            </li>
+            <li>
+                <h2>E</h2>
+            </li>
+            <li>
+                <h2>C</h2>
+            </li>
+            <li>
+                <h2>A</h2>
+            </li>
+            <li>
+                <h2>M</h2>
+            </li>
+            <li>
+                <h2>A</h2>
+            </li>
+            <li>
+                <h2>N</h2>
+            </li>
+        </ul>
+    </div>
+
+    <div id="canvas-container">
+        <div id="heading-small-screen">
+            <h2>Recaman Sequence</h2>
+        </div>
+        <canvas height="680px" width="1200px" id="canvas"></canvas>
+        <br />
+        <input type="range" min="0" max="65" id="rangeInput" value="65">
+        <span id="rangeValue">65</span>
+    </div>
+
+    <div class="heading">
+        <ul>
+            <li>
+                <h2>S</h2>
+            </li>
+            <li>
+                <h2>E</h2>
+            </li>
+            <li>
+                <h2>Q</h2>
+            </li>
+            <li>
+                <h2>U</h2>
+            </li>
+            <li>
+                <h2>E</h2>
+            </li>
+            <li>
+                <h2>N</h2>
+            </li>
+            <li>
+                <h2>C</h2>
+            </li>
+            <li>
+                <h2>E</h2>
+            </li>
+
+        </ul>
+    </div>
 
 </body>
 
