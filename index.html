@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 0.7rem 0 0 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #canvas {
+            border: 3px solid red;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 100px;
+            }
+
+            #canvas {
+                width: 600px;
+                height: 340px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <canvas height="680px" width="1200px" id="canvas"></canvas>
+    <br />
+    <input type="range" min="0" max="65" id="rangeInput" value="65">
+    <span id="rangeValue">65</span>
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>
