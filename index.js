@@ -14,8 +14,13 @@ const sequence = [0, 1, 3, 6, 2, 7, 13, 20, 12, 21, 11, 22, 10, 23, 9, 24, 8, 25
 ]
     .map(item => item * scale)
 
+let val=65;
 
-const onInputChangeHandler = (value) => {
+onInputChangeHandler(val);
+
+function onInputChangeHandler(value) {
+    
+
     rangeValueDiv.innerText = value;
 
     /* here we are passing the 'value' to "drawRecaman" function so that it draws arc till the value of slider only */
